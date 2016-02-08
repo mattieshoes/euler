@@ -1,4 +1,4 @@
-COMPLETED = 21 22 23 24 25
+COMPLETED = 21 22 23 24 25 26 27
 CXX       = g++
 CXXFLAGS  = -Wall -Wextra -std=c++0x -O3
 
