@@ -56,7 +56,7 @@ int main () {
     for (int ii = 123; ii <= 987; ii++) {
         if(!maybe_valid(ii))
             continue;
-        for (int jj = 12; jj < 98; jj++) {
+        for (int jj = 12; jj <= 98; jj++) {
             if(!maybe_valid(jj))
                 continue;
             int kk = ii * jj;
