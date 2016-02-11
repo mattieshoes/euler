@@ -1,4 +1,4 @@
-COMPLETED = 31 32 33 34 36 37 39
+COMPLETED = 31 32 33 34 36 37 39 40
 CXX       = g++
 CXXFLAGS  = -Wall -Wextra -std=c++0x -O3
 
