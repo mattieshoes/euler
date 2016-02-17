@@ -1,4 +1,4 @@
-COMPLETED = 41 42 43 44 45 46 47
+COMPLETED = 41 42 43 44 45 46 47 48
 CXX       = g++
 CXXFLAGS  = -Wall -Wextra -std=c++0x -O4
 
@@ -19,7 +19,7 @@ all: ${COMPLETED}
 47 : 47.cc
 	${CXX} ${CXXFLAGS} 47.cc -o 47
 48 : 48.cc
-	${CXX} ${CXXFLAGS} 48.cc -o 48
+	${CXX} ${CXXFLAGS} -lcln 48.cc -o 48
 49 : 49.cc
 	${CXX} ${CXXFLAGS} 49.cc -o 49
 50 : 50.cc
