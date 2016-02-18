@@ -15,3 +15,26 @@ bool is_decimal_permutation(unsigned long long a, unsigned long long b) {
         return true;
     return false;
 }
+
+int decimal_digits(unsigned long long n) {
+    if( n < 10ULL) return 1;
+    if( n < 100ULL) return 2;
+    if( n < 1000ULL) return 3;
+    if( n < 10000ULL) return 4;
+    if( n < 100000ULL) return 5;
+    if( n < 1000000ULL) return 6;
+    if( n < 10000000ULL) return 7;
+    if( n < 100000000ULL) return 8;
+    if( n < 1000000000ULL) return 9;
+    if( n < 10000000000ULL) return 10;
+    if( n < 100000000000ULL) return 11;
+    if( n < 1000000000000ULL) return 12;
+    if( n < 10000000000000ULL) return 13;
+    if( n < 100000000000000ULL) return 14;
+    if( n < 1000000000000000ULL) return 15;
+    if( n < 10000000000000000ULL) return 16;
+    if( n < 100000000000000000ULL) return 17;
+    if( n < 1000000000000000000ULL) return 18;
+    if( n < 10000000000000000000ULL) return 19;
+    return 20;
+}
