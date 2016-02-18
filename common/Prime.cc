@@ -68,3 +68,21 @@ unsigned long long Prime::next() {
     return primes[index++]; 
 }
 
+bool Prime::is_prime(unsigned long long n) {
+    while(sieve_start < n)
+        do_sieve();
+    unsigned int min = 0;
+    unsigned int max = primes.size();
+    
+    while (min < max) {
+        unsigned int target = (max - min) / 2 + min;
+        
+        if (primes[target] < n)
+            min = target + 1;
+        else if (primes[target] > n)
+            max = target;
+        else
+            return true;
+    }
+    return false;
+}

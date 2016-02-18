@@ -1,4 +1,4 @@
-COMPLETED      = 41 42 43 44 45 46 47 48 49
+COMPLETED      = 41 42 43 44 45 46 47 48 49 50
 CXX            = g++
 CXXFLAGS       = -Wall -Wextra -std=c++0x -O4
 COMMONSOURCES = ../common/Common.cc ../common/Prime.cc
@@ -24,4 +24,4 @@ all: ${COMPLETED}
 49 : 49.cc
 	${CXX} ${CXXFLAGS} ${COMMONSOURCES} 49.cc -o 49
 50 : 50.cc
-	${CXX} ${CXXFLAGS} 50.cc -o 50
+	${CXX} ${CXXFLAGS} ${COMMONSOURCES} 50.cc -o 50
