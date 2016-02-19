@@ -1,3 +1,4 @@
+#include <sstream>
 #include "Common.h"
 
 bool is_decimal_permutation(unsigned long long a, unsigned long long b) {
@@ -37,4 +38,21 @@ int decimal_digits(unsigned long long n) {
     if( n < 1000000000000000000ULL) return 18;
     if( n < 10000000000000000000ULL) return 19;
     return 20;
+}
+
+bool is_palindrome(std::string s) {
+    for(unsigned int a = 0, b = s.size()-1; a < b; a++, b--)
+        if(s[a] != s[b])
+            return false;
+    return true;
+}
+
+cln::cl_I sum_digits(cln::cl_I val) {
+    std::stringstream ss;
+    ss >> val;
+    std::string s = ss.str();
+    cln::cl_I sum = 0;
+    for (unsigned int ii = 0; ii < s.size(); ii++)
+        sum += s.substr(ii, 1).c_str();
+    return sum;
 }

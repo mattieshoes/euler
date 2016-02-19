@@ -30,8 +30,12 @@ int main () {
     for (int ii=999; ii > 99; ii--) {
         for (int jj=999; jj > 99; jj--) {
             int product = ii * jj;
-            if(product > max_palindromic && is_palindromic(product))
+            if(product <= max_palindromic)
+                break;
+            if(is_palindromic(product)) {
                 max_palindromic = product;
+                break;
+            }
         }
     }
     cout << "Maximum palindromic product of two three digit numbers: " << max_palindromic << endl;

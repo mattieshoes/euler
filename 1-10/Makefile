@@ -1,6 +1,7 @@
 COMPLETED = 1 2 3 4 5 6 7 8 9 10
 CXX       = g++
 CXXFLAGS  = -Wall -Wextra -std=c++0x -O3
+COMMON = -lcln ../common/Common.cc ../common/Prime.cc
 
 all: ${COMPLETED}
 
@@ -17,10 +18,10 @@ all: ${COMPLETED}
 6 : 6.cc
 	${CXX} ${CXXFLAGS} 6.cc -o 6
 7 : 7.cc
-	${CXX} ${CXXFLAGS} 7.cc -o 7
+	${CXX} ${CXXFLAGS} ${COMMON} 7.cc -o 7
 8 : 8.cc
 	${CXX} ${CXXFLAGS} 8.cc -o 8
 9 : 9.cc
 	${CXX} ${CXXFLAGS} 9.cc -o 9
 10 : 10.cc
-	${CXX} ${CXXFLAGS} 10.cc -o 10
+	${CXX} ${CXXFLAGS} ${COMMON} 10.cc -o 10

@@ -26,7 +26,6 @@ int main () {
         if(answer)
             break;
     }
-    
     cout << answer << endl;
 
     system_clock::time_point stop = system_clock::now();

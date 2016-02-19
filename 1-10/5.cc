@@ -4,10 +4,7 @@
 // What is the smallest positive number that is evenly divisible by all of the numbers 
 // from 1 to 20?
 
-// NOTES:
-// Max answer will be 20! / 10!
-// 20!/10! is less than 2^64
-// ergo, unsigned long long guaranteed to be large enough
+// Max answer will be 20! / 10! which is less than 2^64
 
 #include <iostream>
 #include <chrono>

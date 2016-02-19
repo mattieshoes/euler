@@ -27,7 +27,6 @@ int main () {
         sumsquared += ii;
     } 
     sumsquared *= sumsquared;
-
     cout << "Difference is: " << sumsquared - squaredsum << endl;
 
     system_clock::time_point stop = system_clock::now();
