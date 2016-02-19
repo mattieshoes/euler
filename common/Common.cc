@@ -49,10 +49,12 @@ bool is_palindrome(std::string s) {
 
 cln::cl_I sum_digits(cln::cl_I val) {
     std::stringstream ss;
-    ss >> val;
+    ss << val;
     std::string s = ss.str();
     cln::cl_I sum = 0;
-    for (unsigned int ii = 0; ii < s.size(); ii++)
-        sum += s.substr(ii, 1).c_str();
+    for (unsigned int ii = 0; ii < s.size(); ii++) {
+        cln::cl_I n = s.substr(ii, 1).c_str();
+        sum += n;
+    }
     return sum;
 }
