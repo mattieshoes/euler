@@ -62,6 +62,7 @@ int main () {
         if(!sum_abundant[ii])
             sum += ii;
     cout << "Sum: " << sum << endl;
+    cout << "Abundant: " << abundant.size() << endl;
         
     system_clock::time_point stop = system_clock::now();
     duration<double> elapsed = duration_cast<duration<double>>(stop - start);
