@@ -1,9 +1,11 @@
-COMPLETED = 11 12 13 14 15 16 17 18 19 20
+COMPLETED = 10 11 12 13 14 15 16 17 18 19
 CXX       = g++
 CXXFLAGS  = -Wall -Wextra -std=c++0x -O3
 
 all: ${COMPLETED}
 
+10 : 10.cc
+	${CXX} ${CXXFLAGS} -lcln 10.cc -o 10
 11 : 11.cc
 	${CXX} ${CXXFLAGS} 11.cc -o 11
 12 : 12.cc
@@ -22,5 +24,5 @@ all: ${COMPLETED}
 	${CXX} ${CXXFLAGS} 18.cc -o 18
 19 : 19.cc
 	${CXX} ${CXXFLAGS} 19.cc -o 19
-20 : 20.cc
-	${CXX} ${CXXFLAGS} -lcln 20.cc -o 20
+clean :
+	rm -f 10 11 12 13 14 15 16 17 18 19

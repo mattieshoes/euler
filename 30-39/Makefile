@@ -1,9 +1,10 @@
-COMPLETED = 31 32 33 34 36 37 39 40
+COMPLETED = 30 31 32 33 34 35 36 37 39
 CXX       = g++
 CXXFLAGS  = -Wall -Wextra -std=c++0x -O3
 
 all: ${COMPLETED}
-
+30 : 30.cc
+	${CXX} ${CXXFLAGS} 30.cc -o 30
 31 : 31.cc
 	${CXX} ${CXXFLAGS} 31.cc -o 31
 32 : 32.cc
@@ -22,5 +23,5 @@ all: ${COMPLETED}
 	${CXX} ${CXXFLAGS} 38.cc -o 38
 39 : 39.cc
 	${CXX} ${CXXFLAGS} 39.cc -o 39
-40 : 40.cc
-	${CXX} ${CXXFLAGS} 40.cc -o 40
+clean :
+	rm -f 30 31 32 33 34 35 36 37 38 39

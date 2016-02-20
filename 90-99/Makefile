@@ -5,6 +5,8 @@ COMMONSOURCES = ../common/Common.cc ../common/Prime.cc
 
 all: ${COMPLETED}
 
+90 : 90.cc
+	${CXX} ${CXXFLAGS} 90.cc -o 90
 91 : 91.cc
 	${CXX} ${CXXFLAGS} 91.cc -o 91
 92 : 92.cc
@@ -23,5 +25,5 @@ all: ${COMPLETED}
 	${CXX} ${CXXFLAGS} 98.cc -o 98
 99 : 99.cc
 	${CXX} ${CXXFLAGS} 99.cc -o 99
-100 : 100.cc
-	${CXX} ${CXXFLAGS} 100.cc -o 100
+clean : 
+	rm -f 90 91 92 93 94 95 96 97 98 99
