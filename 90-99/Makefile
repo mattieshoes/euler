@@ -1,4 +1,4 @@
-COMPLETED      = 92 
+COMPLETED      = 92 97
 CXX            = g++
 CXXFLAGS       = -Wall -Wextra -std=c++0x -O4
 COMMONSOURCES = ../common/Common.cc ../common/Prime.cc
@@ -20,7 +20,7 @@ all: ${COMPLETED}
 96 : 96.cc
 	${CXX} ${CXXFLAGS} 96.cc -o 96
 97 : 97.cc
-	${CXX} ${CXXFLAGS} 97.cc -o 97
+	${CXX} ${CXXFLAGS} -lcln 97.cc -o 97
 98 : 98.cc
 	${CXX} ${CXXFLAGS} 98.cc -o 98
 99 : 99.cc
