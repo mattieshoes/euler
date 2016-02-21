@@ -10,7 +10,8 @@ bool is_decimal_permutation(unsigned long long a, unsigned long long b);
 int decimal_digits(unsigned long long n);
 bool is_palindrome(std::string s);
 cln::cl_I sum_digits(cln::cl_I val);
-
+unsigned long long gcd(unsigned long long a, unsigned long long b);
+unsigned long long phi(unsigned long long n);
 
 bool is_decimal_permutation(unsigned long long a, unsigned long long b) {
     int d[10] = {0,0,0,0,0,0,0,0,0,0};    
@@ -68,6 +69,20 @@ cln::cl_I sum_digits(cln::cl_I val) {
         sum += n;
     }
     return sum;
+}
+
+unsigned long long gcd(unsigned long long a, unsigned long long b) {
+    if (b == 0)
+        return a;
+    return gcd(b, a%b);
+}
+
+unsigned long long phi(unsigned long long n) {
+    unsigned long long tot = 1;
+    for(unsigned long long ii = 2; ii < n; ii++)
+        if (gcd(n, ii) == 1)
+            tot++;
+    return tot;
 }
 
 #endif
