@@ -1,4 +1,4 @@
-COMPLETED      = 81 82 83
+COMPLETED      = 81 82 83 85
 CXX            = g++
 CXXFLAGS       = -Wall -Wextra -std=c++0x -O3
 
