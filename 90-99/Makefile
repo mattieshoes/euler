@@ -1,4 +1,4 @@
-COMPLETED      = 92 97
+COMPLETED      = 92 97 99
 CXX            = g++
 CXXFLAGS       = -Wall -Wextra -std=c++0x -O4
 COMMONSOURCES = ../common/Common.cc ../common/Prime.cc
