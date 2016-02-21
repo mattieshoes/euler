@@ -12,7 +12,7 @@ class Prime {
     std::vector<unsigned long long> primes;
     void do_sieve();
     unsigned long long sieve_start;
-    bool is_prime(unsigned long long n);
+    static bool is_prime(unsigned long long n);
   private:
     unsigned long long index;
     std::vector<bool> sieve;
@@ -85,22 +85,20 @@ unsigned long long Prime::next() {
 }
 
 bool Prime::is_prime(unsigned long long n) {
-    while(sieve_start < n)
-        do_sieve();
-    unsigned int min = 0;
-    unsigned int max = primes.size();
-    
-    while (min < max) {
-        unsigned int target = (max - min) / 2 + min;
-        
-        if (primes[target] < n)
-            min = target + 1;
-        else if (primes[target] > n)
-            max = target;
-        else
-            return true;
+    if (n < 2)
+        return false;
+    if (n % 2 == 0)
+        return false;
+    if (n % 3 == 0)
+        return false;
+    unsigned long long top = (unsigned long long) sqrt(n);
+    for (unsigned long long x = 5; x <= top; x+=6) {
+        if (n % x ==  0)
+            return false;
+        if (n % (x+2) == 0)
+            return false;
     }
-    return false;
+    return true;
 }
 
 #endif

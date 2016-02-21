@@ -1,7 +1,6 @@
 COMPLETED      = 76 79
 CXX            = g++
 CXXFLAGS       = -Wall -Wextra -std=c++0x -O3
-COMMON         = -lcln ../common/Common.cc ../common/Prime.cc
 
 all: ${COMPLETED}
 

@@ -1,7 +1,6 @@
 COMPLETED      = 40 41 42 43 44 45 46 47 48 49
 CXX            = g++
 CXXFLAGS       = -Wall -Wextra -std=c++0x -O3
-COMMON         = -lcln ../common/Common.cc ../common/Prime.cc
 
 all: ${COMPLETED}
 40 : 40.cc
