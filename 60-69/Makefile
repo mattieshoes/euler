@@ -1,4 +1,4 @@
-COMPLETED      = 67 
+COMPLETED      = 63 67
 CXX            = g++
 CXXFLAGS       = -Wall -Wextra -std=c++0x -O3
 COMMON         = -lcln ../common/Common.cc ../common/Prime.cc
@@ -12,7 +12,7 @@ all: ${COMPLETED}
 62 : 62.cc
 	${CXX} ${CXXFLAGS} 62.cc -o 62
 63 : 63.cc
-	${CXX} ${CXXFLAGS} 63.cc -o 63
+	${CXX} ${CXXFLAGS} -lcln 63.cc -o 63
 64 : 64.cc
 	${CXX} ${CXXFLAGS} 64.cc -o 64
 65 : 65.cc
